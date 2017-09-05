@@ -1,0 +1,25 @@
+{
+  "name": "http-server",
+  "version": "0.0.1",
+  "description": "web server for debug requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antirek/http-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antirek/http-server/issues"
+  },
+  "homepage": "https://github.com/antirek/http-server#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "config": "^1.26.2",
+    "express": "^4.15.4",
+    "tracer": "^0.8.11"
+  }
+}

@@ -5,6 +5,13 @@ var bodyParser = require('body-parser')
 
 let app = express()
 app.use(bodyParser.json())
+app.set('views', './views')
+app.set('view engine', 'pug')
+
+app.get('/test', (req, res) => {
+
+    res.render('index', {title: 'test', message: 'test'})
+})
 
 app.all('/', (req, res) => {
 
@@ -12,5 +19,6 @@ app.all('/', (req, res) => {
     res.status(200).send('OK')
 
 })
+
 
 app.listen(config.port, () => {console.log('app started')})
